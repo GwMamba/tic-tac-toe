@@ -2,9 +2,13 @@
 
 # dependencies
 node_modules/
+npm-debu-log*
+yarn-debug.log*
+yarn-error.log*
 
 # Expo
 .expo/
+.expo-shared/
 dist/
 web-build/
 expo-env.d.ts
@@ -20,6 +24,10 @@ expo-env.d.ts
 
 # Metro
 .metro-health-check*
+.expo/dev
+.expo/*
+*.expo/*
+*.packager
 
 # debug
 npm-debug.*
@@ -31,6 +39,7 @@ yarn-error.*
 *.pem
 
 # local env files
+.env
 .env*.local
 
 # typescript
