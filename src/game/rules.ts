@@ -28,3 +28,11 @@ export function playMove(b: Board, i: number, p: Player): Board {
   copy[i] = p;
   return copy;
 }
+
+export function getWinningLine(b: Board): number[] | null {
+  for (const [a, c, d] of LINES) {
+    if (b[a] && b[a] === b[c] && b[a] === b[d]) return [a, c, d];
+  }
+  return null;
+}
+
